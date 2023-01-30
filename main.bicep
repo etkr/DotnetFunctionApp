@@ -81,8 +81,8 @@ resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
 resource srcControls 'Microsoft.Web/sites/sourcecontrols@2021-01-01' = {
   name: '${functionApp.name}/web'
   properties: {
-    repoUrl: 'https://github.com/etkr/DotnetFunctionApp/master'
-    branch: 'main'
+    repoUrl: 'https://github.com/etkr/DotnetFunctionApp'
+    branch: 'master'
     isManualIntegration: true
   }
 }
